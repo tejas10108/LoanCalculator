@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="Loancalc.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="app">
+        <h1>Loan Calculator</h1>
+      </div>
+      <fieldset class="One">
+        <legend>Loan Amount</legend>
+        <span>₹</span>
+        <input type="number" class="amount" placeholder="0" />
+      </fieldset>
+
+      <fieldset class="Two">
+        <legend>Loan Term</legend>
+        <span>Years</span>
+        <input type="number" class="term" placeholder="0" />
+      </fieldset>
+
+      <fieldset class="Three">
+        <legend>Interest Rate</legend>
+        <span>%</span>
+        <input type="number" class="rate" placeholder="0" />
+      </fieldset>
+      <button class="btn">Calculate</button>
+      <div class="result">
+        <table>
+          <tr>
+            <td>Loan Amount</td>
+            <td class="loan-amount">-</td>
+          </tr>
+          <tr>
+            <td>Monthly EMI</td>
+            <td class="emi">-</td>
+          </tr>
+          <tr>
+            <td>Interest</td>
+            <td class="interest">-</td>
+          </tr>
+          <tr>
+            <td>Total Amount</td>
+            <td class="total">-</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="Loancalc.js"></script>
+</html>
